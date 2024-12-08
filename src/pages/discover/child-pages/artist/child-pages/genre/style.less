@@ -1,0 +1,37 @@
+.genre-singer-category-wrapper {
+    margin: 20px 0 10px 0;
+    display: flex;
+    justify-content: space-around;
+
+    .category-btn {
+        display: block;
+        height: 24px;
+        line-height: 24px;
+        width: 22px;
+        background-color: transparent;
+        margin: 0;
+        padding: 0;
+        font-size: 14px;
+        color: #333333;
+        text-align: center;
+        cursor: pointer;
+        user-select: none;
+        font-family: Arial, Helvetica, sans-serif;
+
+        &:hover {
+            text-decoration: underline;
+        }
+
+        &:nth-child(1),
+        &:nth-last-child(1) {
+            width: 45px;
+            font-size: 12px;
+        }
+    }
+
+    .category-btn-active {
+        background: #c20c0c;
+        border-radius: 2px;
+        color: #fff;
+    }
+}

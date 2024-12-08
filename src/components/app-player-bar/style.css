@@ -1,0 +1,395 @@
+.player-bar-wrapper {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+}
+.player-bar-wrapper .player-bar {
+  width: 100%;
+  height: 7px;
+  position: relative;
+  transition: height 0.3s ease-in-out;
+}
+.player-bar-wrapper .player-bar .compound {
+  position: relative;
+  z-index: 998;
+}
+.player-bar-wrapper .player-bar .compound .compound-left {
+  position: absolute;
+  top: -14px;
+  right: 15px;
+  width: 52px;
+  height: 67px;
+  background-repeat: no-repeat;
+  background-image: url("../../assets/img/playbar_sprite.png");
+  background-position: 0 -380px;
+}
+.player-bar-wrapper .player-bar .compound .compound-left .btn {
+  cursor: pointer;
+  width: 18px;
+  height: 18px;
+  margin: 6px 0 0 17px;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-image: url("../../assets/img/playbar_sprite.png");
+  background-position: 0 9999px;
+}
+.player-bar-wrapper .player-bar .compound .compound-left .btn-locking {
+  background-position: -100px -380px;
+}
+.player-bar-wrapper .player-bar .compound .compound-left .btn-locking:hover {
+  background-position: -100px -400px;
+}
+.player-bar-wrapper .player-bar .compound .compound-left .btn-unlocking {
+  background-position: -80px -380px;
+}
+.player-bar-wrapper .player-bar .compound .compound-left .btn-unlocking:hover {
+  background-position: -80px -400px;
+}
+.player-bar-wrapper .player-bar .compound .compound-right {
+  top: -1px;
+  right: 0;
+  width: 15px;
+  height: 54px;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-image: url("../../assets/img/playbar_sprite.png");
+  background-position: -52px -393px;
+}
+.player-bar-wrapper .player-bar .bg {
+  height: 53px;
+  margin-right: 67px;
+  background-position: 0 0;
+  background-repeat: repeat-x;
+  background-image: url("../../assets/img/playbar_sprite.png");
+}
+.player-bar-wrapper .player-bar .handle {
+  position: absolute;
+  top: -10px;
+  width: 100%;
+  height: 20px;
+  cursor: pointer;
+}
+.player-bar-wrapper .player-bar .player-wrap {
+  z-index: 998;
+  height: 47px;
+  width: 980px;
+  margin: 0 auto;
+  position: absolute;
+  top: 6px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-between;
+}
+.player-bar-wrapper .player-bar .player-wrap .btns {
+  width: 108px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.player-bar-wrapper .player-bar .player-wrap .btns .prev,
+.player-bar-wrapper .player-bar .player-wrap .btns .next,
+.player-bar-wrapper .player-bar .player-wrap .btns .begin,
+.player-bar-wrapper .player-bar .player-wrap .btns .pause {
+  cursor: pointer;
+  background-image: url("../../assets/img/playbar_sprite.png");
+  background-repeat: no-repeat;
+  background-position: 0 9999px;
+  background-color: transparent;
+  text-indent: -9999px;
+}
+.player-bar-wrapper .player-bar .player-wrap .btns .prev {
+  width: 28px;
+  height: 28px;
+  margin-top: 2px;
+  background-position: 0 -130px;
+}
+.player-bar-wrapper .player-bar .player-wrap .btns .prev:hover {
+  background-position: -30px -130px;
+}
+.player-bar-wrapper .player-bar .player-wrap .btns .next {
+  width: 28px;
+  height: 28px;
+  margin-top: 2px;
+  background-position: -80px -130px;
+}
+.player-bar-wrapper .player-bar .player-wrap .btns .next:hover {
+  background-position: -110px -130px;
+}
+.player-bar-wrapper .player-bar .player-wrap .btns .pause {
+  width: 36px;
+  height: 36px;
+  background-position: 0 -204px;
+}
+.player-bar-wrapper .player-bar .player-wrap .btns .pause:hover {
+  background-position: -40px -204px;
+}
+.player-bar-wrapper .player-bar .player-wrap .btns .begin {
+  width: 36px;
+  height: 36px;
+  background-position: 0 -165px;
+}
+.player-bar-wrapper .player-bar .player-wrap .btns .begin:hover {
+  background-position: -40px -165px;
+}
+.player-bar-wrapper .player-bar .player-wrap .head {
+  width: 34px;
+  height: 35px;
+  position: relative;
+  margin: 6px 8px;
+}
+.player-bar-wrapper .player-bar .player-wrap .head img {
+  width: 34px;
+  height: 34px;
+  border: none;
+}
+.player-bar-wrapper .player-bar .player-wrap .head .cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-image: url("../../assets/img/playbar_sprite.png");
+  background-position: 0 -80px;
+}
+.player-bar-wrapper .player-bar .player-wrap .play {
+  width: 608px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.player-bar-wrapper .player-bar .player-wrap .play .song-info {
+  width: 608px;
+  height: 28px;
+  line-height: 28px;
+  overflow: hidden;
+  color: #e8e8e8;
+  text-shadow: 0 1px 0 #171717;
+  display: flex;
+  align-items: center;
+}
+.player-bar-wrapper .player-bar .player-wrap .play .song-info a {
+  display: block;
+  font-size: 12px;
+  text-decoration: none;
+}
+.player-bar-wrapper .player-bar .player-wrap .play .song-info .song-name {
+  max-width: 300px;
+  color: #e8e8e8;
+  margin-right: 2px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.player-bar-wrapper .player-bar .player-wrap .play .song-info .song-name:hover {
+  text-decoration: underline;
+}
+.player-bar-wrapper .player-bar .player-wrap .play .song-info .song-mv {
+  width: 19px;
+  height: 17px;
+  background-repeat: no-repeat;
+  background-image: url("../../assets/img/playbar_sprite.png");
+  background-position: 0 -57px;
+}
+.player-bar-wrapper .player-bar .player-wrap .play .song-info .song-mv:hover {
+  background-position: -20px -57px;
+}
+.player-bar-wrapper .player-bar .player-wrap .play .song-info .singer-name {
+  display: flex;
+  margin-left: 16px;
+  font-size: 12px;
+  color: #9b9b9b;
+  text-shadow: 0 1px 0 #171717;
+}
+.player-bar-wrapper .player-bar .player-wrap .play .song-info .singer-name a {
+  color: #9b9b9b;
+}
+.player-bar-wrapper .player-bar .player-wrap .play .song-info .singer-name a:hover {
+  text-decoration: underline;
+}
+.player-bar-wrapper .player-bar .player-wrap .play .song-info .song-link {
+  width: 14px;
+  height: 15px;
+  margin-left: 13px;
+  background-repeat: no-repeat;
+  background-image: url("../../assets/img/playbar_sprite.png");
+  background-position: -110px -103px;
+}
+.player-bar-wrapper .player-bar .player-wrap .play .song-info .song-link:hover {
+  background-position: -130px -103px;
+}
+.player-bar-wrapper .player-bar .player-wrap .play .progress-bar-wrapper {
+  flex: 1;
+  width: 580px;
+  display: flex;
+  font-size: 12px;
+}
+.player-bar-wrapper .player-bar .player-wrap .play .progress-bar-wrapper .ant-slider {
+  height: 9px;
+  width: 493px;
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+.player-bar-wrapper .player-bar .player-wrap .play .progress-bar-wrapper .ant-slider .ant-slider-rail {
+  height: 9px;
+  width: 493px;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-image: url("../../assets/img/progress_bar.png");
+  background-position: right 0;
+}
+.player-bar-wrapper .player-bar .player-wrap .play .progress-bar-wrapper .ant-slider .ant-slider-track {
+  height: 9px;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-image: url("../../assets/img/progress_bar.png");
+  background-position: left -66px;
+}
+.player-bar-wrapper .player-bar .player-wrap .play .progress-bar-wrapper .ant-slider .ant-slider-handle {
+  position: absolute;
+  top: -7px;
+  right: -13px;
+  width: 22px;
+  height: 24px;
+  background-repeat: no-repeat;
+  background-image: url("../../assets/img/sprite_icon.png");
+  background-position: 0 -250px;
+  background-color: transparent;
+  border: none;
+  margin: 0;
+  transition: left;
+}
+.player-bar-wrapper .player-bar .player-wrap .play .progress-bar-wrapper .ant-slider .ant-slider-handle:hover {
+  background-position: 0 -280px;
+}
+.player-bar-wrapper .player-bar .player-wrap .play .progress-bar-wrapper .ant-slider .ant-slider-handle:focus {
+  box-shadow: none;
+}
+.player-bar-wrapper .player-bar .player-wrap .play .progress-bar-wrapper .time {
+  height: 9px;
+  line-height: 9px;
+  margin-left: 15px;
+  text-shadow: 0 1px 0 #121212;
+  color: #797979;
+}
+.player-bar-wrapper .player-bar .player-wrap .play .progress-bar-wrapper .time .begin {
+  color: #a1a1a1;
+}
+.player-bar-wrapper .player-bar .player-wrap .tool {
+  width: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.player-bar-wrapper .player-bar .player-wrap .tool .collect,
+.player-bar-wrapper .player-bar .player-wrap .tool .share {
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+  text-indent: -9999px;
+  background-repeat: no-repeat;
+  background-image: url("../../assets/img/playbar_sprite.png");
+  background-position: 0 9999px;
+  background-color: transparent;
+}
+.player-bar-wrapper .player-bar .player-wrap .tool .collect {
+  background-position: -88px -163px;
+}
+.player-bar-wrapper .player-bar .player-wrap .tool .collect:hover {
+  background-position: -88px -189px;
+}
+.player-bar-wrapper .player-bar .player-wrap .tool .share {
+  background-position: -114px -163px;
+}
+.player-bar-wrapper .player-bar .player-wrap .tool .share:hover {
+  background-position: -114px -189px;
+}
+.player-bar-wrapper .player-bar .player-wrap .line {
+  width: 4px;
+  background-repeat: no-repeat;
+  background-image: url("../../assets/img/playbar_sprite.png");
+  background-position: -147px -238px;
+}
+.player-bar-wrapper .player-bar .player-wrap .control {
+  width: 113px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.player-bar-wrapper .player-bar .player-wrap .control .prompt {
+  display: none;
+  position: absolute;
+  top: -35px;
+  left: 0;
+  width: 81px;
+  height: 39px;
+  line-height: 34px;
+  text-align: center;
+  color: #ffffff;
+  font-size: 12px;
+  background-repeat: no-repeat;
+  background-image: url("../../assets/img/playbar_sprite.png");
+  background-position: 0 -457px;
+}
+.player-bar-wrapper .player-bar .player-wrap .control .volume-btn,
+.player-bar-wrapper .player-bar .player-wrap .control .way-btn,
+.player-bar-wrapper .player-bar .player-wrap .control .single,
+.player-bar-wrapper .player-bar .player-wrap .control .random {
+  width: 25px;
+  height: 25px;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-image: url("../../assets/img/playbar_sprite.png");
+  background-position: -2px -248px;
+  cursor: pointer;
+}
+.player-bar-wrapper .player-bar .player-wrap .control .volume-btn:hover {
+  background-position: -31px -248px;
+}
+.player-bar-wrapper .player-bar .player-wrap .control .way-btn {
+  background-position: -3px -344px;
+}
+.player-bar-wrapper .player-bar .player-wrap .control .way-btn:hover {
+  background-position: -33px -344px;
+}
+.player-bar-wrapper .player-bar .player-wrap .control .single {
+  background-position: -66px -344px;
+}
+.player-bar-wrapper .player-bar .player-wrap .control .single:hover {
+  background-position: -93px -344px;
+}
+.player-bar-wrapper .player-bar .player-wrap .control .random {
+  background-position: -66px -248px;
+}
+.player-bar-wrapper .player-bar .player-wrap .control .random:hover {
+  background-position: -93px -248px;
+}
+.player-bar-wrapper .player-bar .player-wrap .control .list-btn-wrapper {
+  width: 59px;
+  height: 27px;
+  position: relative;
+}
+.player-bar-wrapper .player-bar .player-wrap .control .list-btn-wrapper .list-btn {
+  cursor: pointer;
+  width: 59px;
+  line-height: 24px;
+  padding-left: 24px;
+  font-size: 12px;
+  color: #666666;
+  text-align: center;
+  text-indent: 0;
+  text-shadow: 0 1px 0 #080707;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-image: url("../../assets/img/playbar_sprite.png");
+  background-position: -42px -68px;
+}
+.player-bar-wrapper .player-bar .player-wrap .control .list-btn-wrapper .list-btn:hover {
+  background-position: -42px -98px;
+}

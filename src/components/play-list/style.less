@@ -1,0 +1,359 @@
+.song-list-header {
+    display: flex;
+    height: 33px;
+    justify-content: space-between;
+    border-bottom: 2px solid #c20c0c;
+
+    .left {
+        display: flex;
+
+        h3 {
+            margin: 0;
+            font-size: 20px;
+            line-height: 28px;
+        }
+
+        span {
+            color: #666666;
+            margin: 8px 0 0 15px;
+        }
+    }
+
+    .right {
+        display: flex;
+        line-height: 16px;
+        margin-top: 8px;
+
+        .create-link {
+            display: flex;
+            justify-content: center;
+            line-height: 16px;
+            height: 16px;
+
+            .music-icon {
+                width: 16px;
+                height: 16px;
+                display: block;
+                background-image: url("~@/assets/img/sprite_icon2.png");
+                background-repeat: no-repeat;
+                background-position: -34px -863px;
+            }
+
+            a {
+                font-size: 12px;
+                display: block;
+                color: #0c73c2;
+                text-decoration: underline;
+            }
+        }
+
+        .player-count {
+            color: #666666;
+            margin-left: 10px;
+
+            strong {
+                color: #c20c0c;
+            }
+        }
+    }
+}
+
+.song-list-content {
+    width: 100%;
+    min-height: 100px;
+    border: 1px solid #d9d9d9;
+    box-sizing: border-box;
+
+    .content-header {
+        display: flex;
+        height: 36px;
+
+        .song-index,
+        .song-title,
+        .song-time,
+        .singer {
+            height: 36px;
+            line-height: 36px;
+            background-color: #f7f7f7;
+            background-image: url("~@/./assets/img/sprite_table.png");
+            background-repeat: repeat-x;
+            background-position: 0 0;
+
+            span {
+                padding-left: 8px;
+                display: block;
+                height: 36px;
+                width: 100%;
+                background-image: url("~@//assets/img/sprite_table.png");
+                background-repeat: no-repeat;
+                background-position: 0 -56px;
+            }
+        }
+
+        .song-index {
+            width: 78px;
+
+            span {
+                background-position: 0 0;
+            }
+        }
+
+        .song-title {
+            width: 330px;
+        }
+
+        .song-time {
+            width: 90px;
+        }
+
+        .singer {
+            width: 170px;
+        }
+    }
+
+
+    .content-row:hover {
+        .ranking-time {
+            padding: 6px 4px;
+
+            .time {
+                span {
+                    display: none;
+                }
+
+                .handle {
+                    display: flex;
+                }
+            }
+        }
+    }
+
+    .content-row {
+        height: 30px;
+        display: flex;
+
+        &:nth-child(2n) {
+            background-color: #f7f7f7;
+        }
+
+        .ranking-index,
+        .ranking-name,
+        .ranking-time,
+        .ranking-singer {
+            padding: 6px 10px;
+            line-height: 18px;
+        }
+
+        .ranking-index {
+            width: 78px;
+
+            .index {
+                display: flex;
+                justify-content: space-around;
+
+                span {
+                    color: #999999;
+                    display: block;
+                    width: 25px;
+                    text-align: center;
+                }
+
+                .num {
+                    display: flex;
+                    min-width: 18px;
+
+                    span {
+                        width: 16px;
+                        height: 17px;
+                        background-image: url("~@//assets/img/sprite_icon2.png");
+                        background-repeat: no-repeat;
+                        background-position: -67px -283px;
+                    }
+                }
+            }
+        }
+
+        .ranking-name {
+            width: 330px;
+
+            .name {
+                width: 100%;
+                display: flex;
+
+                .play-icon,
+                .mv-icon {
+                    display: block;
+                    height: 17px;
+                    width: 17px;
+                    cursor: pointer;
+                    background-image: url("~@//assets/img/sprite_table.png");
+                    background-repeat: no-repeat;
+                    background-position: 0 -103px;
+
+                    &:hover {
+                        background-position: 0 -128px;
+                    }
+                }
+
+                .song-name {
+                    display: flex;
+                    margin-left: 5px;
+                    width: 85%;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+
+                    a {
+                        display: block;
+                        color: #333333;
+                        text-decoration: none;
+
+
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+
+                    span {
+                        display: block;
+                        color: #aeaeae;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                    }
+
+                }
+
+                .mv-icon {
+                    width: 23px;
+                    background-position: 0 -151px;
+                    text-indent: -9999px;
+                    overflow: hidden;
+                    margin-left: 2px;
+
+                    &:hover {
+                        background-position: -30px -151px;
+                    }
+                }
+            }
+        }
+
+        .ranking-time {
+            width: 90px;
+
+            .time {
+                span {
+                    display: block;
+                    color: #666666;
+                }
+
+                .handle {
+                    display: none;
+                    line-height: 16px;
+                    justify-content: space-between;
+
+                    button {
+                        margin: 0;
+                        padding: 0;
+                        display: block;
+                        width: 18px;
+                        height: 16px;
+                        text-indent: -9999px;
+                        background-image: url("~@/assets/img/sprite_table.png");
+                        background-repeat: no-repeat;
+                    }
+
+                    .add {
+                        width: 13px;
+                        height: 13px;
+                        background-image: url("~@//assets/img/sprite_icon2.png");
+                        background-position: 0 -700px;
+
+                        &:hover {
+                            background-position: -22px -700px;
+                        }
+                    }
+
+                    .collect {
+                        background-position: 0 -174px;
+
+                        &:hover {
+                            background-position: -20px -174px;
+                        }
+                    }
+
+                    .share {
+                        background-position: 0 -195px;
+
+                        &:hover {
+                            background-position: -20px -195px;
+                        }
+                    }
+
+                    .download {
+                        background-position: -81px -174px;
+
+                        &:hover {
+                            background-position: -104px -174px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .ranking-singer {
+            width: 170px;
+
+
+            .singer {
+                color: #333333;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+
+                a {
+                    color: #333333;
+                    text-decoration: none;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.front-there-row {
+    .content-row:nth-child(2),
+    .content-row:nth-child(3),
+    .content-row:nth-child(4) {
+        height: 70px;
+
+        .ranking-index,
+        .ranking-time,
+        .ranking-singer {
+            padding: 26px 10px;
+            line-height: 18px;
+        }
+
+        .ranking-name {
+            padding: 10px;
+            display: flex;
+            align-items: center;
+
+            .song-image {
+                display: block;
+                width: 50px;
+                height: 50px;
+                margin-right: 10px;
+                img{
+                    width: 50px;
+                    height: 50px;
+                    vertical-align: bottom;
+                }
+            }
+        }
+    }
+}

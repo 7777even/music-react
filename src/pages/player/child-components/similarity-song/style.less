@@ -1,0 +1,85 @@
+.similarity-song-head {
+    height: 23px;
+    border-bottom: 1px solid #cccccc;
+    color: #333333;
+    margin-bottom: 20px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.similarity-song-content {
+    margin-bottom: 20px;
+    .item {
+        height: 32px;
+        width: 200px;
+        display: flex;
+        margin-bottom: 10px;
+
+        .item-left {
+            width: 156px;
+
+            .top {
+                line-height: 16px;
+                font-size: 12px;
+                color: #333333;
+                display: block;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                text-decoration: none;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+
+            .bottom {
+                line-height: 16px;
+                display: block;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                font-size: 12px;
+                color: #999999;
+
+                a {
+                    font-size: 12px;
+                    color: #999999;
+                    text-decoration: none;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+
+        .item-right {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 4px;
+
+            .play,
+            .add {
+                width: 10px;
+                height: 11px;
+                background-color: transparent;
+                background-image: url("../../../../assets/img/sprite_icon3.png");
+                background-position: -69px -455px;
+                background-repeat: no-repeat;
+                opacity: 0.9;
+                cursor: pointer;
+
+                &:hover {
+                    opacity: 1;
+                }
+            }
+
+            .add {
+                background-position: -87px -454px;
+            }
+        }
+    }
+}

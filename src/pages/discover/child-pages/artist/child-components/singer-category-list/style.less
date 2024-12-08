@@ -1,0 +1,43 @@
+.singer-category-list-wrapper {
+    .category-title {
+        height: 25px;
+        font-size: 16px;
+        font-family: "Microsoft Yahei";
+        font-weight: 700;
+        padding-left: 14px;
+        margin-bottom: 0;
+    }
+
+    .category-item {
+        display: block;
+        width: 160px;
+        height: 29px;
+        line-height: 29px;
+        color: #333333;
+        font-size: 12px;
+        background-image: url("~@/assets/img/singer_sprite.png");
+        background-position: 0 -30px;
+        background-repeat: no-repeat;
+        padding-left: 27px;
+        margin-bottom: 2px;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    .active {
+        color: #c20c0c;
+        background-position: 0 0;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+
+    .category {
+        margin-top: 5px;
+        padding-top: 16px;
+        border-top: 1px solid #d3d3d3;
+    }
+}

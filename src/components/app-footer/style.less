@@ -1,0 +1,143 @@
+.footer-wrapper {
+  height: 172px;
+  overflow: hidden;
+  border-top: 1px solid #d3d3d3;
+  background-color: #f2f2f2;
+  font-size: 12px;
+
+  .footer {
+    width: 980px;
+    margin: 0 auto;
+
+    .footer-content {
+      display: flex;
+      justify-content: space-between;
+
+
+      .footer-left {
+        line-height: 24px;
+        padding-top: 15px;
+        width: 520px;
+
+        .text {
+          .police-logo {
+            display: inline-block;
+            width: 14px;
+            height: 14px;
+            background-image: url("../../assets/img/police.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            vertical-align: -2px;
+            margin-right: 2px;
+            margin-left: 8px;
+          }
+
+          span:first-child {
+            margin-right: 14px;
+          }
+
+        }
+
+        .text,
+        .text a {
+          color: #666666;
+        }
+
+        .text:nth-child(3) a {
+          color: #333333;
+        }
+
+        .text a:hover,
+        .link .item:hover {
+          text-decoration: underline;
+        }
+
+        .link .item {
+          color: #999999;
+        }
+
+        .line {
+          color: #c2c2c2;
+          margin: 0 8px 0 10px;
+        }
+      }
+
+      .footer-right {
+        width: 420px;
+        display: flex;
+        justify-content: space-between;
+
+        .unit {
+          width: 60px;
+          height: 70px;
+          margin-top: 33px;
+
+          a {
+            display: block;
+            height: 45px;
+            width: 50px;
+            margin: 0 auto;
+            background-repeat: no-repeat;
+            background-size: 110px 552px;
+            background-image: url("../../assets/img/foot_enter_new.png");
+          }
+
+          span {
+            display: inline-block;
+            height: 14px;
+            width: 52px;
+            margin-left: 3px;
+            margin-top: 6px;
+            background-repeat: no-repeat;
+            background-size: 180px 139px;
+            background-image: url("../../assets/img/foot_enter_tt.png");
+          }
+
+          &:nth-child(1) a {
+            background-position: -63px -456.5px;
+          }
+
+          &:nth-child(2) a {
+            background-position: -63px -101px;
+          }
+
+          &:nth-child(3) a {
+            background-position: 0 0;
+          }
+
+          &:nth-child(4) a {
+            background-position: -60px -50px;
+          }
+
+          &:nth-child(5) a {
+            background-position: 0 -101px;
+          }
+
+
+          &:nth-child(1) span {
+            width: 72px;
+            margin-left: -6px;
+            background-position: 0 -108px;
+          }
+
+          &:nth-child(2) span {
+            background-position: 0px -91px;
+          }
+
+          &:nth-child(3) span {
+            background-position: 0 0;
+          }
+
+          &:nth-child(4) span {
+            margin-left: 6px;
+            background-position: 0 -54px;
+          }
+
+          &:nth-child(5) span {
+            background-position: 0 -72px;
+          }
+        }
+      }
+    }
+  }
+}

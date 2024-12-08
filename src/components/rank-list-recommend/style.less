@@ -1,0 +1,210 @@
+.rank-list-recommend-wrapper {
+  flex: 1;
+
+  &:nth-child(1),
+  &:nth-child(2) {
+    border-right: 1px solid transparent;
+  }
+
+  .item-top {
+    height: 120px;
+    padding: 20px 0 0 20px;
+    display: flex;
+
+    .item-cover {
+      width: 80px;
+      height: 80px;
+      position: relative;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+
+      a {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        text-indent: -9999px;
+        top: 0;
+        left: 0;
+        background-image: url("~@/assets/img/sprite_cover.png");
+        background-repeat: no-repeat;
+        background-position: -145px -57px;
+      }
+    }
+
+    .item-title {
+      margin: 6px 0 0 10px;
+      width: 116px;
+
+      a {
+        color: #333333;
+        text-decoration: none;
+
+        h3 {
+          font-size: 14px;
+          font-weight: 700;
+          width: 100%;
+          color: #333333;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
+      .item-btn {
+        height: 22px;
+        margin-top: 10px;
+
+        .btn {
+          height: 22px;
+          width: 22px;
+          text-indent: -9999px;
+          margin-right: 10px;
+          background-repeat: no-repeat;
+          background-image: url("~@/assets/img/sprite_02.png");
+          background-position: 0 -9999px;
+        }
+
+        .btn-play {
+          background-position: -267px -205px;
+
+          &:hover {
+            background-position: -267px -235px;
+          }
+        }
+
+        .btn-collect {
+          background-position: -300px -205px;
+
+          &:hover {
+            background-position: -300px -235px;
+          }
+        }
+      }
+    }
+
+
+  }
+
+  .item-list {
+    height: 319px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+
+    .list-row {
+      height: 32px;
+      display: flex;
+
+      &:hover {
+        .song-name {
+          width: 100px;
+        }
+
+        .operation {
+          display: flex;
+          justify-content: space-around;
+        }
+
+      }
+
+      .no {
+        display: block;
+        width: 35px;
+        height: 32px;
+        line-height: 32px;
+        text-align: center;
+        color: #666666;
+        font-size: 16px;
+      }
+
+      &:nth-child(1) .no,
+      &:nth-child(2) .no,
+      &:nth-child(3) .no {
+        color: #c10d0c;
+      }
+
+      .song-name {
+        width: 170px;
+        height: 32px;
+        line-height: 32px;
+        vertical-align: middle;
+        color: #000000;
+        font-size: 12px;
+        text-decoration: none;
+
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
+      .operation {
+        display: none;
+        width: 70px;
+        margin: auto 0;
+
+        .btn {
+          width: 17px;
+          height: 17px;
+          background-color: transparent;
+          background-repeat: no-repeat;
+          background-image: url("~@/assets/img/sprite_02.png");
+          background-position: 0 -9999px;
+          text-indent: -9999px;
+        }
+
+        .btn-play {
+          background-position: -267px -268px;
+
+          &:hover {
+            background-position: -267px -288px;
+          }
+        }
+
+        .btn-add {
+          background-image: url("~@/assets/img/sprite_icon2.png");
+          background-position: 2px -698px;
+
+          &:hover {
+            background-position: -20px -698px;
+          }
+        }
+
+        .btn-collect {
+          background-position: -297px -268px;
+
+          &:hover {
+            background-position: -297px -288px;
+          }
+        }
+      }
+    }
+  }
+
+  .item-more {
+    height: 32px;
+    line-height: 32px;
+    margin-right: 30px;
+    text-align: right;
+
+    a {
+      font-size: 12px;
+      color: #000000;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

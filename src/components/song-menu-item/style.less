@@ -1,0 +1,73 @@
+.song-menu-item {
+    padding: 10px 0 10px 10px;
+
+    display: flex;
+    justify-content: space-evenly;
+
+    &:hover {
+        background-color: #f4f2f2;
+    }
+
+    .item-left {
+        width: 40px;
+        position: relative;
+
+        a {
+            display: block;
+            text-decoration: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 40px;
+            width: 40px;
+            background-image: url("../../assets/img/sprite_cover.png");
+            background-repeat: no-repeat;
+            background-position: -310px -330px;
+        }
+
+        img {
+            width: 40px;
+            height: 40px;
+            vertical-align: bottom;
+        }
+
+    }
+
+    .item-right {
+        width: 150px;
+        font-size: 12px;
+        line-height: 20px;
+        display: block;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: none;
+        }
+
+        p {
+            display: block;
+            width: 150px;
+            overflow: hidden;
+            white-space: nowrap;
+            cursor: pointer;
+            margin: 0;
+        }
+
+        .song-menu-name {
+            color: #000;
+            font-weight: 500;
+        }
+
+        .update-time {
+            color: #999999;
+        }
+    }
+}
+
+.item-active {
+    background-color: #e6e6e6;
+
+    &:hover {
+        background-color: #e6e6e6;
+    }
+}

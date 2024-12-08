@@ -1,0 +1,163 @@
+.comment-item {
+    padding: 15px 0;
+    border-top: 1px dotted #cccccc;
+    display: flex;
+    justify-content: space-between;
+
+    &:first-of-type {
+        border-top: none;
+    }
+
+    .left {
+        width: 50px;
+        height: 50px;
+
+        a {
+            display: block;
+            text-decoration: none;
+
+            img {
+                width: 50px;
+                height: 50px;
+                vertical-align: bottom;
+                border: none;
+            }
+        }
+
+    }
+
+    .right {
+        width: 580px;
+        font-size: 12px;
+        color: #333333;
+
+        .user-comment {
+            line-height: 20px;
+            margin-right: 5px;
+
+            sub {
+                display: inline-block;
+                width: 11px;
+                height: 13px;
+                margin-right: 2px;
+                background-repeat: no-repeat;
+                background-image: url("~@/assets/img/sprite_icon2.png");
+                background-position: 0 1px;
+            }
+
+            a {
+                color: #0c73c2;
+                text-decoration: none;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        .reply {
+            display: block;
+            padding: 8px 19px;
+            margin-top: 10px;
+            line-height: 20px;
+            background: #f4f4f4;
+            border: 1px solid #dedede;
+            position: relative;
+
+
+            .triangle {
+                position: absolute;
+                width: 0;
+                height: 0;
+                border: 4px solid;
+                left: 20px;
+                border-color: transparent transparent #dedede transparent;
+                top: -16px;
+            }
+
+            .t1 {
+                top: -9px;
+                border-color: transparent transparent #dedede transparent;
+            }
+
+            .t2 {
+                top: -8px;
+                border-color: transparent transparent #f4f4f4 transparent;
+            }
+
+
+            a {
+                color: #0c73c2;
+                text-decoration: none;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        .control {
+            height: 16px;
+            margin-top: 15px;
+            display: flex;
+            justify-content: space-between;
+
+            .date {
+                min-width: 70px;
+                color: #999999;
+                line-height: 16px;
+            }
+
+            .handle {
+                min-width: 110px;
+                display: flex;
+                align-items: center;
+                line-height: 16px;
+
+                .like {
+                    color: #333333;
+                    display: flex;
+                    line-height: 14px;
+                    background-color: transparent;
+                    cursor: pointer;
+                    margin: 0;
+                    padding: 0;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+
+                    i {
+                        display: flex;
+                        height: 14px;
+                        width: 15px;
+                        margin-right: 6px;
+                        background-repeat: no-repeat;
+                        background-image: url("~@/assets/img/sprite_icon3.png");
+                        background-position: -150px 0;
+
+                        &:hover {
+                            background-position: -150px -20px;
+
+                        }
+                    }
+                }
+
+                .line {
+                    margin: 0 8px;
+                    color: #cccccc;
+                }
+
+                a {
+                    color: #666666;
+                    text-decoration: none;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+
+    }
+}

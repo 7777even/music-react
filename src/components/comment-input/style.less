@@ -1,0 +1,152 @@
+.content-input-title {
+    display: flex;
+    height: 33px;
+    border-bottom: 2px solid #c20c0c;
+    margin-bottom: 20px;
+
+    h3 {
+        color: #333333;
+        font-size: 20px;
+        line-height: 28px;
+        font-weight: normal;
+    }
+
+    span {
+        font-size: 12px;
+        color: #666666;
+        margin: 9px 0 0 20px;
+    }
+}
+
+.content-input-wrapper {
+    height: 100px;
+    width: 647px;
+
+    .comment-input {
+        display: flex;
+        justify-content: space-between;
+
+        .left {
+            width: 50px;
+            height: 50px;
+
+
+            img {
+                width: 50px;
+                height: 50px;
+                vertical-align: bottom;
+            }
+        }
+
+        .right {
+            width: 580px;
+            height: 100px;
+
+            .input-content {
+                height: 64px;
+                position: relative;
+
+                .triangle {
+                    position: absolute;
+                    width: 0;
+                    height: 0;
+                    border: 8px solid;
+                    left: -15px;
+                    border-color: transparent #cdcdcd transparent transparent;
+                    top: 11px;
+                }
+
+                .t1 {
+                    left: -15px;
+                    border-color: transparent #cdcdcd transparent transparent;
+                }
+
+                .t2 {
+                    left: -14px;
+                    border-color: transparent #ffffff transparent transparent;
+                }
+
+                textarea {
+                    font-size: 12px;
+                    display: block;
+                    height: 63px;
+                    line-height: 19px;
+                    width: 100%;
+                    box-sizing: border-box;
+                    background-color: #ffffff;
+                    padding: 7px 6px;
+                    margin: 0;
+                    border-radius: 2px;
+                    border: 1px solid #cdcdcd;
+                    resize: none;
+                    overflow: hidden;
+                }
+            }
+
+            .btn {
+                height: 36px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .btn-left {
+                    width: 45px;
+                    height: 18px;
+                    display: flex;
+                    justify-content: space-between;
+
+                    .icon,
+                    .hint {
+                        width: 18px;
+                        height: 18px;
+                        background-color: transparent;
+                        background-image: url("~@/assets/img/sprite_icon2.png");
+                        background-repeat: no-repeat;
+                        background-position: -40px -490px;
+                        padding: 0;
+                        cursor: pointer;
+                    }
+
+                    .hint {
+                        background-position: -60px -490px;
+                    }
+                }
+
+                .btn-right {
+                    width: 75px;
+                    height: 25px;
+                    display: flex;
+                    justify-content: space-between;
+                    font-size: 12px;
+                    color: #999999;
+                    line-height: 25px;
+                    text-align: center;
+
+                    span {
+                        width: 20px;
+                        height: 25px;
+                        display: block;
+
+                    }
+
+                    .submit {
+                        color: #ffffff;
+                        padding: 0;
+                        width: 46px;
+                        height: 25px;
+                        background-color: transparent;
+                        background-image: url("~@/assets/img/sprite_button2.png");
+                        background-repeat: no-repeat;
+                        background-position: -84px -64px;
+
+                        &:hover {
+                            background-position: -84px -94px;
+                        }
+                    }
+                }
+
+
+            }
+        }
+    }
+}

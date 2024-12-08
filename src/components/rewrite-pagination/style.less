@@ -1,0 +1,112 @@
+.pagination-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    height: 30px;
+
+    .ant-pagination {
+        color: #333333;
+
+        .ant-pagination-prev,
+        .ant-pagination-next {
+            text-align: center;
+            font-size: 12px;
+            color: #333333;
+            width: 70px;
+            height: 24px;
+            border: 1px solid #ccc;
+            box-sizing: content-box;
+
+            button {
+                color: #333333;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 70px;
+                height: 24px;
+                line-height: 24px;
+                margin: 0;
+                padding: 0 0 0 10px;
+                background-position: 0 -560px;
+                background-color: #F1F1F1;
+                background-image: url("~@/assets/img/sprite_button2.png");
+                cursor: pointer;
+                user-select: none;
+
+                &:hover {
+                    background-position: 0 -590px;
+                }
+            }
+        }
+
+        .ant-pagination-next button {
+            padding: 0 10px 0 0;
+            background-position: -75px -560px;
+
+            &:hover {
+                background-position: -75px -590px;
+            }
+        }
+
+        .ant-pagination-disabled {
+            cursor: default;
+        }
+
+        .ant-pagination-disabled .prev-btn,
+        .ant-pagination-disabled .next-btn {
+            background-position: 0 -620px;
+            background-image: url("~@/assets/img/sprite_button2.png");
+            color: #cacaca;
+            cursor: default;
+
+            &:hover {
+                background-position: 0 -620px;
+            }
+        }
+
+        .ant-pagination-disabled .next-btn {
+            background-position: -75px -620px;
+
+            &:hover {
+                background-position: -75px -620px;
+            }
+        }
+
+        .ant-pagination-options {
+            display: none;
+        }
+
+        .ant-pagination-item {
+            height: 22px;
+            line-height: 22px;
+            border: 1px solid #ccc;
+            border-radius: 2px;
+            background-color: #ffffff;
+            min-width: 22px;
+
+            a {
+                line-height: 20px;
+                text-align: center;
+                padding: 0 8px;
+                color: #333333;
+                font-size: 12px;
+            }
+        }
+
+        .ant-pagination-item-active {
+            background-color: #ffffff;
+            border: 1px solid #A2161B;
+            cursor: default;
+
+            a {
+                color: #ffffff;
+                cursor: default;
+                background-image: url("~@/assets/img/sprite_button2.png");
+                background-position: 0 -650px;
+                background-repeat: no-repeat;
+            }
+
+        }
+    }
+}

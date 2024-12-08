@@ -1,0 +1,56 @@
+.multi-download-head {
+    height: 23px;
+    border-bottom: 1px solid #cccccc;
+    color: #333333;
+    margin-bottom: 20px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.multi-download-content {
+    height: 65px;
+    display: flex;
+    background-repeat: no-repeat;
+    background-image: url("../../../../assets/img/sprite.png");
+    background-position: 0 -392px;
+
+    a {
+        background-repeat: no-repeat;
+        background-image: url("../../../../assets/img/sprite.png");
+        background-position: 0 9999px;
+        text-indent: -9999px;
+    }
+
+    .image-iphone {
+        height: 48px;
+        width: 42px;
+
+        &:hover {
+            background-position: 0 -472px
+        }
+    }
+
+    .image-pc {
+        height: 48px;
+        width: 116px;
+
+        &:hover {
+            background-position: -42px -472px;
+        }
+    }
+
+    .image-android {
+        height: 48px;
+        width: 42px;
+
+        &:hover {
+            background-position: -158px -472px;
+        }
+    }
+}
+
+.message {
+    color: #999999;
+    margin: 10px 0 0 0;
+    font-size: 12px;
+}

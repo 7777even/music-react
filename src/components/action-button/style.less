@@ -1,0 +1,188 @@
+.action-button-wrapper {
+    display: flex;
+
+    button {
+        padding: 0;
+        display: block;
+        background-color: transparent;
+    }
+
+    .play {
+        display: flex;
+        padding: 0;
+
+        &:hover {
+
+            .left-bg {
+                background-position: 0 -469px;
+
+                .play-icon {
+                    background-position: -28px -1622px;
+                }
+            }
+
+            .right-bg {
+                background-position: right -510px;
+            }
+        }
+
+
+        .left-bg {
+            display: block;
+            height: 31px;
+            line-height: 31px;
+            width: 61px;
+            background-repeat: no-repeat;
+            background-image: url("~@/assets/img/sprite_button.png");
+            background-position: 0 -387px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #ffffff;
+
+            .play-icon {
+                display: block;
+                width: 20px;
+                height: 20px;
+                margin-right: 5px;
+                background-repeat: no-repeat;
+                background-image: url("~@/assets/img/sprite_button.png");
+                background-position: 0 -1622px;
+            }
+
+        }
+
+        .right-bg {
+            display: block;
+            height: 31px;
+            width: 5px;
+            line-height: 31px;
+            background-repeat: no-repeat;
+            background-image: url("~@/assets/img/sprite_button.png");
+            background-position: right -428px;
+        }
+
+    }
+
+    .add {
+        width: 31px;
+        height: 31px;
+        margin-left: -3px;
+        background-repeat: no-repeat;
+        background-image: url("~@/assets/img/sprite_button.png");
+        background-position: 0 -1588px;
+
+        &:hover {
+            background-position: -40px -1588px;
+        }
+    }
+
+    .share,
+    .comment,
+    .download,
+    .collect {
+        display: flex;
+        color: #333333;
+        margin-left: 6px;
+
+        &:hover {
+            .left-bg {
+                background-position: 0 -1063px;
+            }
+
+            .right-bg {
+                background-position: right -1106px;
+            }
+        }
+
+        .left-bg {
+            min-width: 54px;
+            display: block;
+            height: 31px;
+            line-height: 31px;
+            background-repeat: no-repeat;
+            background-image: url("~@/assets/img/sprite_button.png");
+            background-position: 0 -977px;
+            display: flex;
+            justify-content: flex-end;
+            padding-right: 2px;
+
+            span {
+                display: block;
+                width: 30px;
+                height: 31px;
+            }
+        }
+
+        .right-bg {
+            width: 5px;
+            height: 31px;
+            line-height: 31px;
+            background-repeat: no-repeat;
+            background-image: url("~@/assets/img/sprite_button.png");
+            background-position: right -1020px;
+        }
+
+    }
+
+    .download {
+        .left-bg {
+            background-position: 0 -2761px;
+        }
+
+        .right-bg {
+            background-position: right -1020px;
+        }
+
+        &:hover {
+            .left-bg {
+                background-position: 0 -2805px;
+            }
+
+            .right-bg {
+                background-position: right -1106px;
+            }
+        }
+    }
+
+    .collect {
+        .left-bg {
+            background-position: 0 -1225px;
+        }
+
+        .right-bg {
+            background-position: right -1020px;
+        }
+
+        &:hover {
+            .left-bg {
+                background-position: 0 -1268px;
+            }
+
+            .right-bg {
+                background-position: right -1106px;
+            }
+        }
+    }
+
+    .comment {
+        &:hover {
+            .left-bg {
+                background-position: 0 -1508px;
+            }
+
+            .right-bg {
+                background-position: right -1106px;
+            }
+        }
+
+        .left-bg {
+            background-position: 0 -1465px;
+        }
+
+        .right-bg {
+            background-position: right -1020px;
+        }
+    }
+
+}

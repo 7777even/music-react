@@ -1,0 +1,188 @@
+.song-info-wrapper {
+    width: 620px;
+    margin: 0 auto;
+
+    .song-info-content {
+        display: flex;
+        justify-content: space-between;
+
+        .content-left {
+            width: 198px;
+            position: relative;
+
+            .image-wrapper {
+                width: 198px;
+                height: 198px;
+
+                img {
+                    width: 130px;
+                    height: 130px;
+                    margin: 34px;
+                    vertical-align: bottom;
+                }
+
+                .image-bg {
+                    position: absolute;
+                    width: 206px;
+                    height: 205px;
+                    top: -4px;
+                    left: -4px;
+                    background-image: url("../../../../assets//img/sprite_cover.png");
+                    background-repeat: no-repeat;
+                    background-position: -140px -580px;
+
+                }
+            }
+
+            .create-link {
+                display: flex;
+                justify-content: center;
+                line-height: 16px;
+                height: 16px;
+                margin-top: 20px;
+
+                .music-icon {
+                    width: 16px;
+                    height: 16px;
+                    display: block;
+                    background-image: url("../../../../assets/img/sprite_icon2.png");
+                    background-repeat: no-repeat;
+                    background-position: -34px -863px;
+                }
+
+                a {
+                    font-size: 12px;
+                    display: block;
+                    color: #0c73c2;
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        .content-right {
+            width: 402px;
+            font-size: 12px;
+            color: #999999;
+
+            .head {
+                display: flex;
+
+                .label {
+                    display: block;
+                    width: 54px;
+                    height: 24px;
+                    margin-top: 8px;
+                    margin-right: 8px;
+                    background-image: url("../../../../assets//img/sprite_icon2.png");
+                    background-repeat: no-repeat;
+                    background-position: 0 -463px;
+                }
+
+                .title {
+                    h2 {
+                        font-size: 24px;
+                        margin-bottom: 0;
+                        color: #333333;
+                    }
+
+                    .tag {
+                        font-size: 14px;
+                        color: #bababa;
+                    }
+                }
+            }
+
+            .desc-singer {
+                margin: 10px 0;
+                color: #999999;
+
+                span {
+                    color: #333333;
+
+                    a {
+                        color: #0c73c2;
+                        text-decoration: none;
+
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+
+            .desc-album {
+                margin: 10px 0;
+                color: #999999;
+
+                a {
+                    color: #0c73c2;
+                    text-decoration: none;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+
+            .lyric {
+                color: #333333;
+                height: auto;
+                width: auto;
+                margin-top: 40px;
+                line-height: 23px;
+
+                .surplus {
+                    display: none;
+                }
+
+                .unfold,
+                .fewer {
+                    margin-top: 12px;
+
+                    button {
+                        background-color: transparent;
+                        display: flex;
+                        height: 14px;
+                        line-height: 7px;
+                        color: #0c73c2;
+                        margin: 0;
+                        padding: 0;
+
+                        &:hover {
+                            text-decoration: underline;
+                        }
+
+                        i {
+                            display: block;
+                            width: 11px;
+                            height: 8px;
+                            background-repeat: no-repeat;
+                            background-image: url("../../../../assets/img/sprite_icon2.png");
+                            background-position: -65px -520px;
+                            text-decoration: none;
+                        }
+                    }
+                }
+
+                .fewer button i {
+                    background-position: -45px -520px;
+                }
+            }
+        }
+    }
+
+    .song-info-error {
+        margin-top: 48px;
+        line-height: 30px;
+
+        p {
+            text-align: right;
+
+            a {
+                font-size: 12px;
+                color: #999999;
+                text-decoration: underline;
+            }
+        }
+    }
+}

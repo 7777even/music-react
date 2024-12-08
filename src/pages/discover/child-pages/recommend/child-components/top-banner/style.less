@@ -1,0 +1,118 @@
+.banner-wrapper {
+    background-size: 6000px;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    .banner {
+        position: relative;
+        width: 980px;
+        height: 285px;
+        margin: 0 auto;
+        display: flex;
+
+        .banner-left {
+            width: 728px;
+            height: 285px;
+
+            .banner-item {
+                width: 100%;
+                height: 285px;
+
+                .image {
+                    display: block;
+                    height: 285px;
+                    width: 730px;
+                }
+            }
+        }
+
+        .banner-right {
+            width: 254px;
+            height: 285px;
+            // background-color: red;
+            background-image: url("~@/assets/img/download.png");
+            position: relative;
+
+            .right-download {
+                display: block;
+                width: 215px;
+                height: 56px;
+                margin: 186px 0 0 19px;
+                text-indent: -9999px;
+                text-decoration: none;
+                background-image: url("~@/assets/img/download.png");
+                background-position: 0 9999px;
+                background-repeat: no-repeat;
+
+                &:hover {
+                    background-position: 0 -290px;
+                }
+            }
+
+
+            p {
+                font-size: 12px;
+                font-family: Arial, Helvetica, sans-serif;
+                color: #8d8d8d;
+                margin: 10px auto;
+                text-align: center;
+            }
+
+            .shadow-left {
+                display: block;
+                position: absolute;
+                top: 0;
+                left: -20px;
+                width: 20px;
+                height: 285px;
+                background-image: url("~@/assets/img/banner_sprite.png");
+                background-position: -1px 0;
+                background-repeat: no-repeat;
+            }
+
+            .shadow-right {
+                display: block;
+                position: absolute;
+                top: 0;
+                right: -20px;
+                width: 20px;
+                height: 285px;
+                background-image: url("~@/assets/img/banner_sprite.png");
+                background-position: -20px 0;
+                background-repeat: no-repeat;
+            }
+        }
+
+        .control {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 36px;
+            height: 70px;
+            background-color: transparent;
+            padding: 0;
+            background-image: url("~@/assets/img/banner_sprite.png");
+            background-position: 0 9999px;
+            background-repeat: no-repeat;
+            cursor: pointer;
+        }
+
+        .control-left {
+            left: -68px;
+            background-position: 0 -360px;
+
+            &:hover {
+                background-position: 0 -430px;
+            }
+        }
+
+        .control-right {
+            right: -68px;
+            background-position: 0 -508px;
+
+            &:hover {
+                background-position: 0 -578px;
+            }
+        }
+    }
+}

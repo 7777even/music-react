@@ -1,0 +1,101 @@
+.dj-radio-recommend-wrapper {
+    margin-top: 35px;
+    height: 360px;
+
+    .dj-radio-title {
+        display: flex;
+        justify-content: space-between;
+        height: 40px;
+        border-bottom: 2px solid #c20c0c;
+        color: #333333;
+        font-family: "Microsoft Yahei", Arial, Helvetica, sans-serif;
+
+        h3 {
+            font-size: 24px;
+            font-weight: normal;
+
+            a {
+                color: #333333;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+
+            span {
+                font-family: simsun, \5b8b\4f53;
+            }
+
+        }
+
+        .more {
+            color: #666666;
+            font-size: 12px;
+            margin-top: 14px;
+            display: flex;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .dj-radio-item-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        // justify-content: space-between;
+
+        .item {
+            width: 435px;
+            height: 160px;
+            padding: 20px 0;
+            margin-left: 30px;
+            display: flex;
+            justify-content: space-between;
+
+            &:nth-child(1),
+            &:nth-child(2) {
+                border-bottom: 1px solid #e7e7e7;
+            }
+
+            &:nth-child(2n-1) {
+                margin-left: 0;
+            }
+
+            .head {
+                display: block;
+                width: 120px;
+                height: 120px;
+
+                img {
+                    width: 120px;
+                    height: 120px;
+                    vertical-align: bottom;
+                }
+            }
+
+            .desc {
+                width: 295px;
+
+                h3 {
+                    font-size: 18px;
+                    margin: 16px 0 20px;
+
+                    a {
+                        color: #333333;
+                        font-weight: 700;
+
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+
+                p {
+                    color: #999999;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}

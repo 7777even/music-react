@@ -1,0 +1,124 @@
+.enter-singer-wrapper {
+  // background-color: yellowgreen;
+  margin-top: 15px;
+
+  .singer-nav {
+    height: 23px;
+    margin: 0 20px;
+    border-bottom: 1px solid #cccccc;
+    display: flex;
+    font-size: 12px;
+    justify-content: space-between;
+
+    h3 {
+      color: #333333;
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    a {
+      color: #666666;
+    }
+  }
+
+  .singer-list {
+    margin: 6px 0 14px 20px;
+
+    .item {
+      margin-top: 14px;
+
+      .item-content {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 14px;
+        width: 210px;
+        height: 62px;
+        background-color: #fafafa;
+
+        &:hover {
+          background-color: #f4f4f4;
+        }
+
+        .head {
+          width: 62px;
+          height: 62px;
+
+          img {
+            width: 62px;
+            height: 62px;
+            vertical-align: middle;
+            border-style: none;
+          }
+        }
+
+        .info {
+          width: 134px;
+          border: 1px solid #e9e9e9;
+          border-left: none;
+
+          h4 {
+            margin-top: 8px;
+            font-size: 14px;
+            font-weight: 700;
+            color: #333333;
+
+            width: 90%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+          }
+
+          .singer-info {
+            width: 90%;
+            font-size: 12px;
+            color: #666666;
+
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+          }
+
+
+
+        }
+      }
+    }
+  }
+
+  .become-singer-btn {
+    display: block;
+    width: 210px;
+    height: 31px;
+    margin-left: 20px;
+    border-radius: 4px;
+    padding: 0 5px 0 0;
+    text-decoration: none;
+    color: #333333;
+    background-image: url("../../../../../../assets/img/sprite_button.png");
+    background-repeat: no-repeat;
+    background-position: right -100px;
+    text-align: center;
+
+    &:hover {
+      background-position: right -182px;
+    }
+
+    span {
+      display: block;
+      width: 100%;
+      height: 31px;
+      line-height: 31px;
+      font-size: 12px;
+      font-weight: bold;
+      padding: 0 15px 0 20px;
+      background-image: url("../../../../../../assets/img/sprite_button.png");
+      background-repeat: no-repeat;
+      background-position: 0 -59px;
+
+      &:hover {
+        background-position: 0 -141px;
+      }
+
+    }
+  }
+}
